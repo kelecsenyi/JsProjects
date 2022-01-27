@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+
+    background-image: url('../pics/bg-body.gif');
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.box{
+    /*box-sizing: border-box;/*a paddingek érétke nem adódik hozzá a mérethez*/
+    background-color: white;
+    max-width: 600px;/*reszponzívnál már nem szokás, helyette ink max-width*/
+    width: 90%;
+    /*padding: 20px;*/
+    margin: 40px auto;
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: green;*/
+    /*border: 10px solid green;*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+.box .header-image{
+    background: url('../pics/image1.jpg') top center;
+    height: 200px;
+}
+
+.box .box-content{
+    padding: 20px;
+}
+
+.box h2{
+    margin: 0;
+    color:#32859d;
+}
+
+.box.box-2 .header-image{/*öröklődés*/
+    background-image: url('../pics/image2.jpg');
+}
+.box .box-content .details{
+    margin: 16px 0 0 0;
+}
+.box .box-content .details a{
+    background: #feb127;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+}

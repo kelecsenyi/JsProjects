@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+
+
+/*
+box-sizing részletes leírás:
+https://cyrex.hu/2017/11/10/css-box-sizing/
+*/
+* {
+	box-sizing: border-box
+}
+body {
+	background: url('../pics/bg-body.gif') fixed;
+	margin: 0;
+	font-family: 'Oswald', sans-serif
+}
+.box {
+	background-color: white;
+	max-width: 600px;
+	width: 90%;
+	/*
+	az auto értékű margin egyenlően fogja elosztani
+	a rendelkezésre álló helyet a két oldalon
+	*/
+	margin: 40px auto;
+	box-shadow: 0 0 30px rgba(0,0,0,.7)
+}
+/*
+a .box-on belüli .box-content szelektálása egy szóközzel történik
+*/
+.box .box-content {
+	padding: 20px
+}
+
+/*
+.box-on belüli bekezédek szelektálása
+*/
+.box .box-content p {
+	color: #535353
+}
+.box .box-content h2 {
+	margin: 0;
+	color: #32859d
+}
+.box .box-content .details {
+	margin: 16px 0 0 0
+}
+
+.box .box-content .details a {
+	background: #feb127;
+	color: black;
+	padding: 5px 10px;
+	display: inline-block;
+	text-decoration: none
+}
+.box .header-image {
+	background: url('../pics/image1.jpg') top center;
+	height: 200px
+}
+
+/*
+a .box-2 class-on belül felülírjuk a .header-image háttérképét
+*/
+.box.box-2 .header-image {
+	background-image: url('../pics/image2.jpg')
+}

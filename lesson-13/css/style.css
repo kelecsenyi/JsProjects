@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap');
+
+* {
+	box-sizing: border-box
+}
+html {
+	height: 100%
+}
+body {
+	font-family: 'Roboto';
+	font-weight: 300;
+	margin: 0;
+	background: #4f667a;
+	height: 100%
+}
+.wrapper {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center
+}
+.icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url('../pics/icons.png')
+}
+.icon.icon1 { background-position: 0 0 }
+.icon.icon2 { background-position: -32px 0 }
+.icon.icon3 { background-position: -64px 0 }
+.icon.icon4 { background-position: -96px 0 }
+.icon.icon5 { background-position: 0 -32px }
+.icon.icon6 { background-position: -32px -32px }
+.icon.icon7 { background-position: -64px -32px }
+.icon.icon8 { background-position: -96px -32px }
+
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-shadow: 0 0 100px rgba(0,0,0,.2)
+}
+table td {
+	padding: 10px 15px;
+	background: white;
+	transition: all .3s
+}
+table th {
+	padding: 15px;
+	background: #30393d;
+	color: white;
+	text-align: left;
+}
+table tr:nth-child(odd) td {
+	background: #ddd
+}
+table tr td:nth-child(4) {
+	text-align: right;
+	text-decoration: line-through;
+	white-space: nowrap
+}
+
+table tr td:last-child {
+	text-align: right;
+	color: #ff6e6e;
+	font-weight: 700;
+	white-space: nowrap
+}
+
+
+table tr:not(:first-child):hover td {
+	background: #ff6e6e;
+	color: #fff
+}

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<title>2. Tables</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- táblázat -->
+<table>
+	<!-- táblázat címe -->
+	<caption>Könyvek</caption>
+	<!-- oszlopokat tudunk kijelölni -->
+	<colgroup>
+		<col>
+		<col>
+		<col>
+		<col>
+		<!-- az utolsó oszlop hátterét sárgára állítjuk -->
+		<col style="background-color:yellow">
+	</colgroup>
+	<!-- a táblázat fejrészét tudjuk a <thead> elemmel összefogni -->
+	<thead>
+		<!-- a <tr> egy sort jelöl, a <td> egy cellát -->
+		<tr>
+			<th>cikkszám</th>
+			<th>szerző</th>
+			<th>cím</th>
+			<th>készlet</th>
+			<th>ár</th>
+		</tr>
+	</thead>
+	<!-- a táblázat törzsét tudjuk a <tbody>-val összefogni -->
+	<tbody>
+		<tr>
+			<td>123313</td>
+			<td>Frei Tamás</td>
+			<td>Bábel</td>
+			<td>2 db</td>
+			<td>4 464 Ft</td>
+		</tr>
+		<tr>
+			<td>985632</td>
+			<td>Daniel Goleman</td>
+			<td>Érzelmi intelligencia</td>
+			<td>8 db</td>
+			<td>3 790 Ft</td>
+		</tr>
+		<tr>
+			<td>058964</td>
+			<td>Ann Napolitano</td>
+			<td>Ezüst madarak</td>
+			<td>10 db</td>
+			<td>3 790 Ft</td>
+		</tr>
+		<tr>
+			<td>762465</td>
+			<td>Nicolas Barreau</td>
+			<td>Piciny csodák kávézója</td>
+			<td>3 db</td>
+			<td>3 315 Ft</td>
+		</tr>
+		<tr>
+			<td>782456</td>
+			<td>Bödőcs Tibor</td>
+			<td>Meg se kínáltak</td>
+			<!-- a rowspan-nel függőlegesen tudunk cellákat összevonni -->
+			<td rowspan="2">4 db</td>
+			<td>3 324 Ft</td>
+		</tr>
+		<tr>
+			<td>628752</td>
+			<td>Riley Sager</td>
+			<td>Zárj minden ajtót!</td>
+			<td>2 793 Ft</td>
+		</tr>
+		<tr>
+			<td>198632</td>
+			<td>Alafair Burke</td>
+			<td>Az ex</td>
+			<td>1 db</td>
+			<td>2 394 Ft</td>
+		</tr>
+		<tr>
+			<td>556987</td>
+			<td>Rebecca Fleet</td>
+			<td>Múlt kölcsönbe</td>
+			<td>8 db</td>
+			<td>1 110 Ft</td>
+		</tr>
+	</tbody>
+	<!-- a táblázat lábrésézt tudjuk a <tfoot>-tal összefogni -->
+	<tfoot>
+		<tr>
+			<!-- a colspan-nel vízszintesen tudunk cellákat összevonni -->
+			<td colspan="4">Összesen:</td>
+			<td>24 980 Ft</td>
+		</tr>
+	</tfoot>
+</table>
+
+</body>
+</html>

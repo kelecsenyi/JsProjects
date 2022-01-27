@@ -1,0 +1,264 @@
+<!--
+DOCTYPE: az első dolog amit mindig kötelezően meg kell adni.
+Ez nem egy HTML tag, hanem információ a böngészőnek,
+hogy milyen szabvány szerint renderelje az oldalt.
+
+Dokumentáció:
+https://www.w3schools.com/tags/tag_doctype.asp
+-->
+
+<!doctype html>
+
+<!-- 
+Language code list:
+https://www.w3schools.com/tags/ref_language_codes.asp
+
+Country code list:
+https://www.w3schools.com/tags/ref_country_codes.asp
+-->
+<html lang="hu">
+<head>
+	<title>1. HTML tags</title>
+
+	<!--
+	Karakterkódolás beállítása, szinte mindig UTF-8
+	Dokumentáció:
+	https://www.w3schools.com/tags/att_meta_charset.asp
+	-->
+	<meta charset="utf-8">
+
+	<!--
+	A weboldal látható méretét határozza meg, melyhez beállítjuk az eszköz kijelzőjének méretét.
+	Dokumentáció:
+	https://www.w3schools.com/css/css_rwd_viewport.asp
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!-- címsorok -->
+<h1>Címsor 1</h1>
+<h2>Címsor 2</h2>
+<h3>Címsor 3</h3>
+<h4>Címsor 4</h4>
+<h5>Címsor 5</h5>
+<h6>Címsor 6</h6>
+
+<!-- bekezdés -->
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+	<!-- egyszerű sortörés, használható ilyen formában is: <br/> -->
+	<br>
+	<!-- aláhúzott szöveg -->
+	<u>Curabitur luctus</u>
+	<!-- dőlt szöveg -->
+	<i>imperdiet diam</i>,
+	<!-- mindkettő félkövér szöveg, a <strong> szemantikusabb -->
+	<b>in mollis urna pellentesque id.</b>
+	<strong>Aliquam faucibus</strong>
+	elementum mi, volutpat porta lorem imperdiet at.
+	
+	Ut faucibus metus ac lectus laoreet placerat.
+</p>
+
+<p>
+	<!-- kisebb méretű betű -->
+	<small>Aenean venenatis</small>
+	libero a iaculis ultricies. Fusce efficitur fringilla tortor non sollicitudin.
+	Etiam ac enim at tortor convallis pulvinar sed at magna.
+</p>
+
+<!-- fix szélességű betűvel szedett szöveg -->
+<pre>Integer mattis nulla non condimentum porttitor.</pre>
+
+<!-- idézet egy másik forrásból -->
+<blockquote>Integer mattis nulla non condimentum porttitor.</blockquote>
+
+
+<!-- vízszintes vonal -->
+<hr>
+
+<p>
+	<!-- rövid idézet -->
+	<q>Nullam vulputate, elit ut cursus tempor,</q>
+	felis quam finibus justo, nec egestas ante augue eu est.
+	Suspendisse laoreet quam a iaculis tempus. Ut sit amet turpis sit amet odio vestibulum facilisis.
+</p>
+
+<p>
+	<!-- már nem érvényes szöveg megjelölése -->
+	<s>Nam et velit ut dolor</s>
+	dapibus ultrices in a ex.
+	<!-- alsóindex -->
+	<sub>Nunc</sub>
+	vestibulum magna id risus eleifend volutpat.
+	Morbi dictum efficitur
+	<!-- felsőindex -->
+	<sup>luctus.</sup>
+</p>
+
+<p>
+	<!-- sárga háttérrel kiemelt szöveg -->
+	<mark>Nullam vulputate, elit ut cursus tempor,</mark>
+	felis quam finibus justo, nec egestas ante augue eu est.
+	Suspendisse laoreet quam a iaculis tempus. Ut sit amet turpis sit amet odio vestibulum facilisis.
+</p>
+
+<p>
+	<!-- törölt szövegrészlet, illetve új szövegrészlet megjelölésére szolgál -->
+	<del>Nullam vulputate</del>, <ins>elit ut cursus tempor</ins>,
+	felis quam finibus justo, nec egestas ante augue eu est.
+	Suspendisse laoreet quam a iaculis tempus. Ut sit amet turpis sit amet odio vestibulum facilisis.
+</p>
+
+
+<p>
+	<!-- emphasized text -->
+	<em>Nullam vulputate</em>,
+	felis quam finibus justo, nec egestas ante augue eu est.
+	Suspendisse laoreet quam a iaculis tempus. Ut sit amet turpis sit amet odio vestibulum facilisis.
+</p>
+
+<p>
+	<!-- rövidítés -->
+	<abbr title="Hypertext Markup Language">HTML</abbr>,
+	felis quam finibus justo, nec egestas ante augue eu est.
+	Suspendisse laoreet quam a iaculis tempus. Ut sit amet turpis sit amet odio vestibulum facilisis.
+</p>
+
+
+<!-- idő megjelölése -->
+<p>We open at <time>10:00</time> every morning.</p>
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+
+
+
+<!-- definition list, terms, descriptions -->
+<dl>
+	<dt>Kalapács</dt>
+	<dd>A kalapács az a szerszám, melynek közvetve vagy közvetlenül ható ütéseivel más tárgy idomítását (kovácsolás) vagy valamely más tárgynak valamely harmadik tárgyba való behatolását (kalapálás) célozzuk.</dd>
+	<dt>Csavar</dt>
+	<dd>A csavar egyike az egyszerű gépeknek. Csavarokat gépek működtetésére, erő sokszorozásra és kötőelemként használják.</dd>
+</dl>
+
+
+<!-- számozott lista -->
+<ol>
+	<li>első</li>
+	<li>második</li>
+	<li>harmadik</li>
+	<li>negyedik</li>
+</ol>
+
+<!-- számozatlan lista -->
+<ul>
+	<li>első</li>
+	<li>második</li>
+	<li>harmadik</li>
+	<li>negyedik</li>
+</ul>
+
+
+<!-- képek megjelölése, alt tag mindig kötelező, ha nincs, akkor is ki kell írni -->
+<figure>
+	<img src="pics/image.jpg" alt="kép">
+	<figcaption>kép</figcaption>
+<figure>
+
+
+<!-- az űrlapokat mindig FORM tag-etk közé zárjuk -->
+<form method="post">
+	<!-- az űrlapelemeket fieldset taggel szoktuk csoportosítani -->
+	<fieldset>
+		<!-- űrlap címe -->
+		<legend>ez itt az űrlap címe</legend>
+
+		<!-- progress bar -->
+		<progress value="13" max="100"></progress>
+
+		<!-- számozatlan listába helyezett űrlap elemek, nem kötelező így csinálni, én így szoktam -->
+		<ul>
+			<li>
+				<!--
+				a label űrlapelemek elnevezésére, azonosítására szolgál
+				átlaguser számára nem hordoz lényeges információt, inkább a képernyő felolvasó szoftverek
+				veszik hasznát
+				-->
+				<label for="vezeteknev">Vezetéknév</label>
+
+				<!-- egyszerű szöveg input, a placeholder a segítő szöveget mutatja, mely eltűnik, ha a user belekattint -->
+				<input type="text" id="vezeteknev" placeholder="Vezetéknév">
+			</li>
+			<li>
+				<label for="email">E-mail cím</label>
+				<!-- e-mail input -->
+				<input type="email" id="email" placeholder="E-mail cím">
+			</li>
+			<li>
+				<label for="password">Jelszó</label>
+				<!-- jelszó input -->
+				<input type="password" id="password">
+			</li>
+			<li>
+				<label for="hirlevel">Hírlevél</label>
+				<!-- jelölőnégyzet -->
+				<input type="checkbox" id="hirlevel">
+			</li>
+			<li>
+				<!-- rádiógombok -->
+				<label for="ferfi">Férfi</label>
+				<input type="radio" name="gender" value="ferfi" id="ferfi">
+				<label for="no">Nő</label>
+				<input type="radio" name="gender" value="no" id="no">
+			</li>
+			<li>
+				<label for="colors">Színek</label>
+				<!-- legördülő -->
+				<select id="colors">
+					<option value="red">piros</option>
+					<option value="black">fekete</option>
+					<option value="green">zöld</option>
+				</select>
+			</li>
+			<li>
+				<label for="auto">Autó</label>
+				<!-- lelegördülő, csoportokkal -->
+				<select id="auto">
+					<optgroup label="Német">
+						<option value="audi">Audi</option>
+						<option value="Mercedes">Mercedes</option>
+					</optgroup>
+					<optgroup label="Olasz">
+						<option value="alfa">Alfa Romeo</option>
+						<option value="fiat">Fiat</option>
+					</optgroup>
+				</select>
+			</li>
+			<li>
+				<label for="introduction">Bemutatozás</label>
+				<!-- többsoros szöveg -->
+				<textarea id="introduction" rows="4" cols="50"></textarea>
+			</li>
+			<li>
+				<label for="cv">Önéletrajz</label>
+				<!-- fájl input -->
+				<input type="file" id="cv">
+			</li>
+			<li>
+				<!-- űrlap elküldő gomb -->
+				<input type="submit" value="elküldöm az adatokat">
+			</li>
+			<li>
+				<!-- gomb HTML elem -->
+				<button type="submit">elküldöm az adatokat</button>
+			</li>
+		</ul>
+
+	</fieldset>	
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,900&display=swap');
+
+* {
+	box-sizing: border-box
+}
+html {
+	height: 100%
+}
+body {
+	height: 100%;
+	font-family: 'Roboto Slab';
+	/*
+	CSS gradient generátorok:
+	https://cssgradient.io/
+	https://www.colorzilla.com/gradient-editor/
+	https://www.cssmatic.com/gradient-generator
+	*/
+	background: linear-gradient(#fff,#a7a7a7);
+	margin: 0
+}
+
+/*
+függőlegesen és vízszintesen is középre igazított flexbox elem
+*/
+.wrapper {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center
+}
+.wrapper .content {
+	background: url('../pics/bg-box.png');
+	box-shadow: 0 0 100px rgba(255,255,255,.8);
+	width: 600px;
+	height: 400px;
+	position: relative;
+	overflow: hidden
+}
+
+
+
+.title {
+	position: absolute;
+	top: -93px;
+	width: 100%;
+	color: #f0ff00;
+	font-size: 40px;
+	font-weight: 900;
+	text-align: center;
+	padding: 20px 0;
+	background: rgba(0,0,0,.4);
+
+	/* animáció neve */
+	animation-name: title;
+
+	/* animáció hossza */
+	animation-duration: 10s;
+
+	/* animáció lejárata után hova álljon a lejátszófej */
+	animation-fill-mode: forwards;
+
+	/* animáció eltolása */
+	animation-delay: 1s
+}
+
+/* az animáció kulcskockái */
+@keyframes title {
+	0% { top: -93px }
+	5% { top: 0 }
+	40% { background: rgba(0,0,0,.4); color: #f0ff00; }
+	50% { background: #ff4e9c; color: white }
+	95% { top: 0 }
+	100% { top: -93px; background: #ff4e9c; color: white }
+}
+
+.shoe1 {
+	width: 500px;
+	height: 200px;
+	bottom: 50px;
+	left: -500px;
+	position: absolute;
+	background: url('../pics/nike1.png');
+	animation-name: shoe1;
+	animation-duration: 5s;
+}
+@keyframes shoe1 {
+	0% { left: -500px; }
+	/*
+	ha két kulcskocka értéke megegyezik, akkor nem szükséges kétszer leírni,
+	hanem vesszővel is megadhatjuk, és akkor elég csak egyszer leírni a
+	hozzájuk tartozó CSS property-ket	
+	*/
+	20%, 50% { left: 50px }
+	100% { left: 600px }
+}
+
+
+
+.shoe2 {
+	width: 500px;
+	height: 200px;
+	bottom: 50px;
+	left: -500px;
+	position: absolute;
+	background: url('../pics/nike2.png');
+	animation-name: shoe2;
+	animation-duration: 5s;
+	animation-delay: 5s
+}
+@keyframes shoe2 {
+	0% { left: -500px; }
+	20%, 50% { left: 50px }
+	100% { left: 600px }
+}
+
+
+
+
+.buy {
+	position: absolute;
+	font-size: 50px;
+	font-weight: 900;
+	background: rgba(0,0,0,.4);
+	color: #bfdf51;
+	width: 350px;
+	height: 90px;
+	text-align: center;
+	padding: 10px 0;
+	left: 125px;
+	top: -90px;
+	/*
+	animation-name: buy;
+	animation-duration: 5s;	
+	animation-delay: 11s;
+	animation-fill-mode: forwards;
+	shorthand megadás:
+	*/
+	animation: buy 5s 11s forwards, pulse 1s 14s infinite;
+	/* vesszővel elválasztva két animációt is rátehetünk egy elemre */
+}
+
+@keyframes buy {
+	0% { top: -90px; }
+	50%, 100% { top: 155px }
+}
+@keyframes pulse {
+	0% { 	background: rgba(0,0,0,.4); color: #bfdf51; }
+	50% { 	background: #bfdf51; color: black; }
+}

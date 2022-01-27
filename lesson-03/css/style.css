@@ -1,0 +1,20 @@
+/* webfont importálása */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* html elem magassága 100% kell, hogy legyen */
+html {
+	height: 100%
+}
+
+/*
+body elemen background shorthand, háttérkép van megadva ami ismétlődik, középre van igazítva,
+scrollozással nem mozdul el, és az alapszíne ahol nincs kép, ott zöld
+
+a betűméret 20px, a sortávolság 27px, a betűtípus Roboto
+*/
+body {
+	background: url('../pics/bg-body.gif') green repeat center center fixed;
+	color: white;
+	font: bold 20px/27px 'Roboto', sans-serif;
+	
+}
