@@ -108,6 +108,7 @@ html {
     animation-delay: 11s;
     animation-fill-mode: forwards;*/
     animation: buy 5s 11s forwards, pulse 1s 14s infinite;
+cursor:pointer;
 }
 
 @keyframes buy {
