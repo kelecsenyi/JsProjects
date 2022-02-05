@@ -136,7 +136,7 @@ nav{
 .landing{
     min-height: 600px;
     background: linear-gradient(var(--gradient1), var(--gradient2)),
-                url("pics/landing2.jpg") no-repeat center center;
+                url("pics/landing.jpg") no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -167,11 +167,13 @@ nav{
     padding: 10px;
     border-radius: 20px;
     color:white;
-    transition: all.3s;
+    transition: all .6s;
 }
 
 .container a:hover{
-    background: rgba(255, 255, 255, .5);
+    background: white;
+    color: black;
+    transition: all .6s;
 }
 
 @media (max-width: 770px){
