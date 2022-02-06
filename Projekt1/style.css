@@ -2,7 +2,7 @@
 Theme Name: Conti-Trans
 Theme URI: --
 Description: Responsive webdesign
-Version: 1.1
+Version: 1.2
 Author: Kelecsényi Balázs
 Author URI: --
 */
@@ -331,6 +331,10 @@ footer{
     margin: 10px 0 10px 0;
     text-decoration: none;
     color: white;
+}
+
+.footer-container a:hover{
+    color: gray
 }
 
 .footer-container a .icon{
