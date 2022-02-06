@@ -1,3 +1,13 @@
+/*
+Theme Name: Conti-Trans
+Theme URI: --
+Description: Responsive webdesign
+Version: 1.0
+Author: Kelecsényi Balázs
+Author URI: --
+*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 *{
     box-sizing: border-box;
@@ -192,8 +202,7 @@ nav{
  }
 /*MAIN--LANDING-END*/
 
-/*Main*/
-
+/*MAIN*/
 .title{
     margin: 9px 0;
     display:flex;
@@ -248,11 +257,6 @@ nav{
     background: #478C5C;
 }
 
-.main .parts section:hover{
-    transform: scale(1.1,1.1);
-    transition: transform .4s;
-}
-
 .parts{
    max-width: 1150px;
     display: flex;
@@ -263,20 +267,82 @@ nav{
 
 .parts #contact .wrapper{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .parts #contact .wrapper a {
-    height: 500px;
-    background: url("pics/location.JPG") no-repeat left center;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .4);
+    background: url("pics/location.JPG") no-repeat center center;
     display: block;
-    width: 75%;
+    margin: 5px;
+    width: 50%;
 }
 
-.parts #contact .wrapper .details h3{
-    border-bottom: 1px solid var(--nav);
-    padding-bottom: 10px;
+.parts #contact ul{
+    list-style: none;
+}
+.parts #contact ul li h4{
+   margin: 5px 0;
 }
 
+.parts #contact ul li{
+    line-height: 35px;
+}
+
+@media (max-width:800px){
+    .parts #contact .wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .parts #contact ul li{
+        text-align: center;
+    }
+}
+/*MAIN-END*/
+
+/*FOOTER*/
+footer{
+    background: var(--nav);
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: white;
+}
+.footer-container{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-container a{
+    flex-basis: 20%;
+    text-align: center;
+    display: block;
+    margin: 10px 0 10px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-container a .icon{
+    font-size: 3rem;
+    display: block;
+}
+
+@media (max-width:800px){
+    .footer-container a{
+        flex-basis: 50%;
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (max-width:500px){
+    .footer-container a{
+        flex-basis: 100%;
+    }
+}
+/*FOOTER-END*/
