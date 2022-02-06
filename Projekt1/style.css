@@ -2,7 +2,7 @@
 Theme Name: Conti-Trans
 Theme URI: --
 Description: Responsive webdesign
-Version: 1.0
+Version: 1.1
 Author: Kelecsényi Balázs
 Author URI: --
 */
@@ -188,18 +188,14 @@ nav{
 
 @media (max-width: 770px){
    .container a{
-       font-size: 1rem;
+       font-size: 1.3rem;
    }
    .container h1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
    }
 }
 
-@media (max-width: 770px){
-    .container h1{
-     font-size: 1.2rem;
-    }
- }
+
 /*MAIN--LANDING-END*/
 
 /*MAIN*/
@@ -216,6 +212,15 @@ nav{
 .title h2{
     font-size: 2rem;
     font-weight: 500;
+}
+
+@media (max-width:770px){
+    .title h2{
+        font-size: 1.7rem;
+    }
+    .wrapper p{
+        font-size: 1.1rem;
+    }
 }
 
 .title::after{
