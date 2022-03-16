@@ -1,0 +1,95 @@
+/*---Commons---*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+}
+
+.btn {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background-color: rgb(255, 136, 25);
+    color: black;
+}
+
+/*---Commons end---*/
+
+.image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+  }
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.container:hover .image1 {
+    opacity: 0.3;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+  }
+  
+/*----OVERLAY----*/
+.image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position: absolute;
+    bottom: 100%;/*100 nál fentről jön, 0 nál lentről*/
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.elements .text {
+    color: white;
+    font-size: 20px;
+    margin:2rem;
+}
+
+.elements{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
