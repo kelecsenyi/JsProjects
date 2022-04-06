@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.container{
+    margin: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    height: auto;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+
+.app-title{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.temperature-value{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.notification{
+    color: lightcoral;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.temperature-description{
+    margin: 5px 0;
+}
