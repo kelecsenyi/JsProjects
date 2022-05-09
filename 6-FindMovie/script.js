@@ -48,11 +48,11 @@ document.getElementById('search').addEventListener('submit',(event)=>{
     let codedyear = encodeURI(year);
     fetch(`http://www.omdbapi.com/?s=${codedword}&y=${codedyear}&apiKey=9606ae0f`)
     .then(response => response.json())
-    .then(res => {
+    /*.then(res => {
         if (!res.Search) {
             return Promise.reject('Sikertelen keresés!');
         }
-    })
+    })*/
     .then(data => render(data))
     .catch(error => alert(error))
 })
